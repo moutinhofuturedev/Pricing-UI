@@ -11,19 +11,30 @@ interface FeatureProps extends StackProps {
 function Feature(props: FeatureProps) {
     const { icon, children, ...rest } = props
 
-    return(
-        <HStack {...rest} spacing={"1.5rem"} alignItems={"start"} >
-            <Icon as={icon} boxSize={"3rem"} />
-            <Text textAlign={["left", "left", "center"]} fontSize={"lg"} fontWeight={"bold"}>{children}</Text>
-        </HStack>
+    return (
+      <HStack {...rest} spacing={"1.5rem"} alignItems={"start"}>
+        <Icon as={icon} boxSize={"3rem"} />
+        <Text
+          textAlign={["left", "left", "center"]}
+          fontSize={["md", "md", "lg"]}
+          fontWeight={"bold"}
+        >
+          {children}
+        </Text>
+      </HStack>
     )
 }
 
 export function Features() {
     return (
-      <Box maxWidth={"1024px"} m={"auto"} pt={"3.5rem"} pb={"2rem"} >
-        <HStack px={"3rem"} spacing={"1.25rem"} flexDirection={["column", "column", "row"]} gap={"1rem"}>
-          <Feature icon={MoneyBackIcon} >
+      <Box maxWidth={"1024px"} m={"auto"} pt={"2.5rem"} pb={"2rem"}>
+        <HStack
+          px={["2.5rem", "2.5rem", "3rem"]}
+          spacing={"0.5rem"}
+          flexDirection={["column", "column", "row"]}
+          gap={"1rem"}
+        >
+          <Feature icon={MoneyBackIcon}>
             <Text>30 days money back Guarantee</Text>
           </Feature>
 
