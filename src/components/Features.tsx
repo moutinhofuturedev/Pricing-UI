@@ -29,10 +29,11 @@ export function Features() {
     return (
       <Box maxWidth={"1024px"} m={"auto"} pt={"2.5rem"} pb={"2rem"}>
         <HStack
-          px={["2.5rem", "2.5rem", "3rem"]}
+          px={["2rem", "2rem", "3rem"]}
           spacing={"0.5rem"}
           flexDirection={["column", "column", "row"]}
           gap={"1rem"}
+          alignItems={'stretch'}
         >
           <Feature icon={MoneyBackIcon}>
             <Text>30 days money back Guarantee</Text>

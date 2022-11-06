@@ -49,7 +49,7 @@ export function Pricing() {
                 Get Started
               </Button>
             </Box>
-            <Box p={"3.75rem"} fontSize={"1rem"} bg={"white"}>
+            <Box p={"2.5rem"} fontSize={"1rem"} bg={"white"}>
               <Text textAlign={"left"}>
                 Access these features when you get this pricing package for your
                 business
